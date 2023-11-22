@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+      p {
+        font-family: 'Roboto', Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .container1 {
+        width: 300px;
+        display: inline-block;
+      }
+
+      .profile-container {
+        width: 70px;
+        padding: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .profile-picture {
+        width: 65px;
+        border-radius: 60px;
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
+      }
+
+      .persons-info {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 3px;
+        cursor: pointer;
+      }
+
+      .cute, .popular {
+        font-size: 18px;
+        color: gray;
+        margin-bottom: 3px;
+      }
+
+      .follow-button {
+        vertical-align: middle;
+        background-color: rgb(0, 153, 255);
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        margin-left: 70px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+
+      .follow-button:hover {
+        opacity: 0.8;
+      }
+
+      .follow-button:active {
+        opacity: 0.5;
+      }
+
+      .container2 {
+        width: 350px;
+        display: block;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .follow-button1 {
+        vertical-align: middle;
+        background-color: rgb(0, 153, 255);
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        margin-left: 120px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+
+      .follow-button1:hover {
+        opacity: 0.8;
+      }
+
+      .follow-button1:active {
+        opacity: 0.5;
+      }
+
+      .thumbnail-container {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 20px;
+      }
+
+      .traveler {
+        width: 200px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+
+      .traveler:hover {
+        opacity: 0.8;
+      }
+
+      .traveler:active{
+        opacity: 0.5;
+      }
+
+      .video-info {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .video-title {
+        font-family: 'Roboto', Arial;
+        font-weight: 500;
+        width: 250px;
+        line-height: 22px;
+        padding-bottom: 6px;
+      }
+
+      .video-author, .video-stats {
+        font-size: 12px;
+        color: gray;
+        padding-bottom: 4px;
+        font-weight: 400;
+      }
+
+      .video1 {
+        margin-bottom: 10px;
+      }
+
+      .friend-suggetion {
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 2px;
+        display: inline-block;
+      }
+
+      .friend-pic {
+        width: 200px;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+
+      .friend-pic:hover {
+        opacity: 0.8;
+      }
+
+      .friend-info {
+        padding-left: 8px;
+      }
+
+      .mutual-friend-pic {
+        width: 32px;
+        border-radius: 15px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .mutual2 {
+        color: gray;
+        font-size: 14px;
+      }
+
+      .count-text {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 2px;
+        padding-top: 5px;
+
+      }
+
+      .name-fb {
+        font-weight: bold;
+        padding-left: 2px;
+        padding-top: 4px;
+        padding-bottom: 3px;
+      }
+
+      .add-button {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(58, 138, 243);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+
+      .add-button:hover {
+        opacity: 0.8;
+      }
+
+      .add-button:active {
+        opacity: 0.5;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container2">
+      <div class="profile-container">
+        <img class="profile-picture" 
+         src="https://i.pinimg.com/736x/12/f8/4f/12f84f1d59ba2916fb56704a59a2771c.jpg"
+         alt="cat">
+      </div>
+      <div class="persons-info">
+        <p class="name">Daisy</p>
+        <p class="cute">the handsome</p>
+        <p class="popular">Popular</p>
+      </div>
+   
+      <button class="follow-button">
+        Follow
+      </button>
+    </div>
+
+    <div class="container2">
+      <div class="profile-container">
+        <img class="profile-picture" 
+         src="https://i.pinimg.com/736x/00/af/ce/00afcee76fd36649db22650c4cc134ad.jpg"
+         alt="cat">
+      </div>
+      <div class="persons-info">
+        <p class="name">Ronel</p>
+        <p class="cute">the cute</p>
+        <p class="popular">Popular</p>
+      </div>
+   
+      <button class="follow-button1">
+        Follow
+      </button>
+    </div>
+
+    <div class="video1">
+      <div class="thumbnail-container">
+        <img class="traveler" src="https://i.pinimg.com/564x/e4/ea/72/e4ea727d4a104e3a8c6f871f5d30b929.jpg" 
+        alt="travel">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Ang pag travel ko sa Universe HAHAHAHA!!
+        </p>
+        <p class="video-author">
+          BobbyCawaling
+        </p>
+        <p class="video-stats">
+          1.5K views &#183; 4 months ago
+        </p>
+      </div>
+    </div>
+
+    <div class="video1">
+      <div class="thumbnail-container">
+        <img class="traveler" src="https://i.pinimg.com/564x/bd/3a/f5/bd3af502082ebc03ca171922c42e4a01.jpg" 
+        alt="travel">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Wala lang basta title to wala ako maisip E
+        </p>
+        <p class="video-author">
+          BobbyCawaling
+        <p class="video-stats">
+          5.7K views &#183; 11 months ago
+        </p>
+      </div>
+    </div>
+
+    <div class="video1">
+      <div class="thumbnail-container">
+        <img class="traveler" src="https://i.pinimg.com/564x/a1/c4/02/a1c40279347a770d7cbb7aad8586e0e1.jpg" 
+        alt="travel">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+         Cooking show ang Miss Universe
+        </p>
+        <p class="video-author">
+          BobbyCawaling
+        </p>
+        <p class="video-stats">
+          1K views &#183; 4 months ago
+        </p>
+      </div>
+    </div>
+
+    <div class="friend-suggetion">
+      <div class="friend-image">
+        <img class="friend-pic" src="https://i.pinimg.com/736x/12/f8/4f/12f84f1d59ba2916fb56704a59a2771c.jpg" 
+        alt="img">
+      </div>
+      <div class="friend-info">
+        <p class="name-fb">Alonisan</p>
+          <div class="mutual-friend">
+            <img class="mutual-friend-pic" src="https://i.pinimg.com/564x/da/c6/81/dac6817ae6eac4821c0d4b3f9e0cd614.jpg" 
+            alt="img">
+            <div class="count-text">
+              <p class="mutual2">2 mutual friends</p>
+            </div>
+          </div>
+      </div>
+      <button class="add-button">
+        Add Friend
+      </button>
+    </div>
+
+    <div class="friend-suggetion">
+      <div class="friend-image">
+        <img class="friend-pic" src="https://i.pinimg.com/736x/00/af/ce/00afcee76fd36649db22650c4cc134ad.jpg" 
+        alt="img">
+      </div>
+      <div class="friend-info">
+        <p class="name-fb">Ethan</p>
+          <div class="mutual-friend">
+            <img class="mutual-friend-pic" src="https://i.pinimg.com/564x/da/c6/81/dac6817ae6eac4821c0d4b3f9e0cd614.jpg" 
+            alt="img">
+            <div class="count-text">
+              <p class="mutual2">2 mutual friends</p>
+            </div>
+          </div>
+      </div>
+      <button class="add-button">
+        Add Friend
+      </button>
+    </div>
+
+    <div class="friend-suggetion">
+      <div class="friend-image">
+        <img class="friend-pic" src="https://i.pinimg.com/736x/60/51/28/6051286ce363d11159c8b0e0355d0e1a.jpg" 
+        alt="img">
+      </div>
+      <div class="friend-info">
+        <p class="name-fb">Bobby</p>
+          <div class="mutual-friend">
+            <img class="mutual-friend-pic" src="https://i.pinimg.com/564x/da/c6/81/dac6817ae6eac4821c0d4b3f9e0cd614.jpg" 
+            alt="img">
+            <div class="count-text">
+              <p class="mutual2">2 mutual friends</p>
+            </div>
+          </div>
+      </div>
+      <button class="add-button">
+        Add Friend
+      </button>
+    </div>
+
+  </body>
+</html>
